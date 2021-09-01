@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1., user-scalable = no" />
+    <title>Ricardo Juan Vitali - DWTM2A 2019 Final</title>
+    <!-- Recordar de cambiar el title -->
+
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="fonts/style.css">
+</head>
+
+<body>
+
+    <nav id="menu">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbuton">
+            <span class="icon-navicon"></span>
+        </label>
+
+        <h1>E-commerce Thor</h1>
+
+        <ul>
+            <li id="home"><a href="#"><span class="icon-home"></span> Home</a></li>
+            <li id="navCategorias"><a href="#"><span class="icon-layers"></span>Categorias<span
+                        class="icon-angle-right"></span></a>
+                <ul class="navcerrado">
+
+                </ul>
+            </li>
+            <li id="sobreMi"><a href="#"><span class="icon-person"></span> Sobre mi</a></li>
+
+        </ul>
+
+        <div class="carroNumero">
+            <p>0</p>
+            <a href="#" id="shop"><span class="icon-local_grocery_storeshopping_cart"></span></a>
+        </div>
+
+    </nav>
+    <div class="contenido">
+        <header>
+
+            <picture>
+                <img src="imagenes/Pibejugando.jpg" alt="Imagen de Chico jugando">
+            </picture>
+
+            <div id="verMas">
+                <a href="#masVendidos">Ver más</a>
+            </div>
+        </header>
+
+        <main>
+            <h2>Categorias</h2>
+            <ul class="categorias">
+            </ul>
+            <div class="masVendidos" id="masVendidos">
+                <h2>Mas vendidos</h2>
+
+                <div id="vendidos">
+                    <!--
+            <div>
+                <img src="imagenes/Auris1_.jpg" alt="s">
+                <div>
+                <span>Precio: $0</span>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes/AurisKitty.jpg" alt="a">
+                <div>
+                <span>Precio: $0</span>
+                </div>
+            </div>-->
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!--<div class="modal">
+        <div>
+            <span class="cerrar">X</span>
+            <div> divImagenes
+                <div> divImagen
+                    <img src="imagenes/Auris3.jpg" alt="d"> imagenGrande
+                </div>
+                <div class="vistaPrevia"> divPrevia
+                    
+                    <div class="elegido">
+                        <img src="imagenes/Auris3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <h3>Producto 1</h3> h3
+            <p>Descripcion</p> descripcion
+            <p>Precio</p> precio
+            <div id="boton"> divboton
+                <button>Agregar al carrito</button> button
+            </div>
+        </div>
+    </div>
+-->
+
+    <!-- Carrito-->
+    <!--
+    <div class="modalCarrito"> divCarrito
+        <div> divGeneral
+            <span class="cerrar">X</span> spanCerrar
+            <h3><span class="icon-local_grocery_storeshopping_cart"></span> span Mi Carrito</h3>h3
+            <div class="productosCarrito"> productosCarrito
+                <div>
+                    <span class="borrar">X</span>
+                    <div>
+                        <img src="imagenes/Auris2.jpg" alt="dou">
+                    </div>
+                    <div class="informacion">
+                        <h4>Nombre del Producto</h4>
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <div>
+                            <span class="">-</span>
+                            <span>1</span>
+                            <span class="icon-plus-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="borrar">X</span>
+                    <div>
+                        <img src="imagenes/Auris2.jpg" alt="dou">
+                    </div>
+                    <div class="informacion">
+                        <h4>Nombre del Producto</h4>
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <div>
+                            <span class="icon-minus-circle"></span>
+                            <span>1</span>
+                            <span class="icon-plus-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="borrar">X</span>
+                    <div>
+                        <img src="imagenes/Auris2.jpg" alt="dou">
+                    </div>
+                    <div class="informacion">
+                        <h4>Nombre del Producto</h4>
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <div>
+                            <span class="">-</span>
+                            <span>1</span>
+                            <span class="icon-plus-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="borrar">X</span>
+                    <div>
+                        <img src="imagenes/Auris2.jpg" alt="dou">
+                    </div>
+                    <div class="informacion">
+                        <h4>Nombre del Producto</h4>
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <div>
+                            <span class="">-</span>
+                            <span>1</span>
+                            <span class="icon-plus-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="borrar">X</span>
+                    <div>
+                        <img src="imagenes/Auris2.jpg" alt="dou">
+                    </div>
+                    <div class="informacion">
+                        <h4>Nombre del Producto</h4>
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <div>
+                            <span class="">-</span>
+                            <span>1</span>
+                            <span class="icon-plus-circle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class=botonComprar>
+                <button>Comprar</button>
+                <button>Cerrar</button>
+            </div>
+        </div>
+        
+    </div>
+-->
+    <!--
+    <div class="modalFormulario"> modalFormulario
+        <div> divGeneral,
+            <span class="cerrar">X</span> spanCerrar
+            <div class="modalTitulo"> divTitulo
+                <h3>Finalizar la compra</h3> h3
+            </div>
+            <div class="formulario"> divFormulario
+                <div> 
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="mail">Correo electrónico</label>
+                    <input type="email" id="mail">
+                </div>
+                <div>
+                    <label for="dni">Número de documento</label>
+                    <input type="text" id="dni">
+                </div>
+                <div>
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input type="number" id="tarjeta">
+                </div>
+                <div>
+                    <label for="direccion">Domicilio</label>
+                    <input type="text" id="direccion">
+                </div>
+                <button>Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+-->
+
+
+    <!-- Categoria nueva-->
+
+    <div class="categoria">
+        <h3>Auriculares</h3>
+        <div>
+            <div>
+                <img src="imagenes/Auris2.jpg" alt="dou">
+            </div>
+            <div class="informacion">
+                <h4>Nombre del Producto</h4>
+                <p>Descripcion</p>
+                <p>Precio</p>
+                <span class="icon-plus-circle"></span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="imagenes/Auris2.jpg" alt="dou">
+            </div>
+            <div class="informacion">
+                <h4>Nombre del Producto</h4>
+                <p>Descripcion</p>
+                <p>Precio</p>
+                <span class="icon-plus-circle"></span>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="compraFinalizada">
+        <div>
+            <img src="imagenes/Tic.png">
+            <p>Su compra ha sido realizada con éxito.</p>
+            <a>Volver al carrito</a>
+        </div>
+    </div>
+-->
+    <!--
+    <div class="publicidad">
+        <span class="cerrar">X</span>
+        <img src="imagenes/bannerPublicidad.jpg">
+    </div>
+-->
+    <!--
+<div class="alerta">
+    <span>Producto Añadido</span>
+    <p>El producto se ha añadido con éxito</p>
+</div>-->
+
+    <div class="modalPerfil cerrado">
+        <span class="cerrar">X</span>
+        <div class="perfil">
+            <h3>Sobre mi</h3>
+            <div>
+                <div>
+                    <img src="imagenes/fotoRicky.jpg" alt="Foto de Ricardo Vitali">
+                </div>
+                <ul>
+                    <li>Alumno: Ricardo Vitali</li>
+                    <li>Carrera: Diseño y desarrollo web</li>
+                    <li>Materia: Interacción con dipositivos móviles</li>
+                    <li>Comisión: A</li>
+                    <li>Turno: Mañana</li>
+                    <li>Año: 2020</li>
+                    <li>Cuatrimestre: 2</li>
+                    <li>Docente: Omar Toyos</li>
+                    <li>Carácter de entrega: Final</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="footerUno">
+
+
+            <h4 class="hGrande">Politica de Privacidad</h4>
+            <ul>
+                <li><a href="#">Terminos de Servicio</a></li>
+                <li><a href="#">Terminos de uso de contenido generado por el usuario</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="footerUno">
+
+
+            <h4 class="hGrande">Nuestro Contacto</h4>
+            <ul>
+                <li>Telefono: <a href="tel:+20123456789">+2 012 345 6789</a></li>
+                <li>Email: <a href="mailto:"> ricardo.vitali@davinci.edu.ar</a></li>
+            </ul>
+
+        </div>
+
+        <div id="redesSociales">
+            <ul>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+            </ul>
+            <p>Derechos de autor &copy; 2019</p>
+        </div>
+
+
+
+
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

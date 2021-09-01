@@ -1,0 +1,811 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(fonts/Rubik-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: rubik;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*Nav y header*/
+
+nav {
+    z-index: 5;
+    background: #222e48;
+    width: 100%;
+    height: 90px;
+}
+
+nav h1 {
+
+    background-image: url('../imagenes/LogoThor.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    font-size: 0;
+    margin-top: -80px;
+
+}
+
+nav ul li a {
+    color: whitesmoke;
+}
+
+.checkbuton {
+    color: whitesmoke;
+    font-size: 30px;
+    line-height: 80px;
+    margin-left: 40px;
+}
+
+#check {
+    display: none;
+}
+
+nav>ul {
+    z-index: 5;
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background: #35476e;
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: .5s;
+}
+
+nav ul li {
+    display: block;
+    text-align: left;
+    line-height: 35px;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+#shop {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.carroNumero p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    width: 18px;
+    right: 30px;
+    color: whitesmoke;
+    font-size: 16px;
+    background-color: #f8931f;
+    border-radius: 25px;
+}
+
+header img {
+    width: 100%;
+}
+
+header a {
+    margin-top: -60%;
+    display: inline-block;
+    padding: .6em 1.25em;
+    font-size: 1.2em;
+    font-weight: 550;
+    color: whitesmoke;
+    border-radius: 20px;
+    background: #0071bd;
+}
+
+#verMas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Main*/
+
+h2 {
+    text-align: center;
+    border-bottom: 3px solid #0071bd;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 300px) {
+
+    main ul {
+        flex-direction: column !important;
+    }
+}
+
+main ul li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+main a {
+    color: #333333;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Mas Vendidos*/
+
+.masVendidos {
+    background-color: lightgray;
+}
+
+#vendidos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 300px) {
+
+    #vendidos {
+        flex-direction: column !important;
+
+    }
+
+    #vendidos>div:last-of-type {
+        margin-top: 15px !important;
+    }
+}
+
+
+#vendidos>div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+
+}
+
+#vendidos div img {
+    height: 140px;
+}
+
+#vendidos div div {
+    position: relative;
+    bottom: 29px;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, .75);
+    color: whitesmoke;
+}
+
+/* Ventana de compra finalizada */
+
+.compraFinalizada {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222e48;
+}
+
+.compraFinalizada div {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.compraFinalizada div img {
+    height: 50%;
+}
+
+.compraFinalizada div a {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white !important;
+}
+
+/* Publicidad */
+
+.publicidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.publicidad img {
+    width: 80vw;
+}
+
+/* Footer*/
+
+footer {
+    width: 100%;
+    padding: 30px 0px;
+    color: whitesmoke;
+    background-color: #1c1920;
+
+
+}
+
+footer ul {
+    line-height: 30px;
+    display: contents;
+    list-style-type: none;
+
+}
+
+footer a {
+    color: white;
+
+}
+
+
+.footerUno {
+    margin-left: 10%;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background: #1b9bff;
+    transition: .7s;
+}
+
+
+
+.hGrande {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+#redesSociales {
+
+    text-align: center;
+}
+
+#redesSociales a {
+    padding: 0px 20px;
+}
+
+#redesSociales p {
+    margin-top: 25px;
+
+}
+
+#redesSociales ul li {
+
+    display: inline-block;
+    font-size: 60px;
+}
+
+/* Modal*/
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .75);
+}
+
+.modal>div {
+    background-color: white;
+    color: #333333;
+    max-height: 75vh;
+    width: 80%;
+    max-width: 500px;
+
+}
+
+.modal img {
+    width: 75%;
+}
+
+.modal div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cerrar {
+    font-size: 30px;
+    padding: 5px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: whitesmoke;
+    background-color: darkred;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal h3 {
+    margin-left: 5px;
+}
+
+.modal p {
+    margin-left: 5px;
+}
+
+.modal button {
+    margin: 10px 0;
+    background-color: #1b9bff;
+    border: 1px solid lightgray;
+    color: whitesmoke;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.vistaPrevia {
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+}
+
+.vistaPrevia img {
+
+    width: 80px;
+
+}
+
+.elegido {
+
+    border-right: 3px solid #1b9bff;
+}
+
+
+/* Categoria nueva*/
+
+.categoria {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .6s ease;
+}
+
+.categoria.abierto {
+    height: auto !important;
+}
+
+.categoria.abierto .botonVolver {
+    position: fixed;
+    top: 100px;
+    left: 15px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.categoria.abierto h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212f49;
+    border-bottom: 3px solid #0071bd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+
+.categoria.abierto img {
+    height: 140px;
+}
+
+.categoria.abierto>div {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 75%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.categoria.abierto span {
+    color: #212f49;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #212f49;
+    cursor: pointer;
+}
+
+.informacion {
+    margin-left: 50px;
+
+}
+
+.informacion h4 {
+    color: #212f49;
+}
+
+.abierto .informacion p:first-of-type {
+    color: #212f49;
+    font-weight: 500;
+}
+
+.abierto .informacion p:last-of-type {
+    color: #0071bd;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 450px) {
+
+    .categoria>div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .categoria span {
+        margin-top: 10px;
+
+
+
+    }
+
+    .informacion {
+        margin-left: 0;
+    }
+
+}
+
+
+/* Carrito*/
+
+.modalCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalCarrito>div {
+    max-height: 75vh;
+    background-color: white;
+    width: 70%;
+}
+
+.modalCarrito>div>.productosCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalCarrito .cerrar {
+    background-color: gray !important;
+}
+
+.modalCarrito h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+
+}
+
+.modalCarrito span {
+    font-size: 30px;
+
+}
+
+.modalCarrito div.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalCarrito img {
+    height: 150px;
+}
+
+.botonComprar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonComprar button:last-of-type {
+    background-color: darkgray;
+}
+
+.botonComprar button {
+    border: 1px solid lightgray;
+    color: whitesmoke;
+    padding: 3px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 80%;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.botonComprar button:first-of-type {
+    background-color: #0ad60b;
+}
+
+.borrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 75%;
+    font-size: 20px !important;
+    color: whitesmoke;
+    background-color: darkred;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Formulario de finalización de compra */
+
+.modalFormulario {
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalFormulario>div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+}
+
+.modalFormulario>div .modalTitulo {
+    width: 100%;
+    background-color: #222e48;
+}
+
+.modalFormulario>div h3 {
+    text-align: center;
+    color: whitesmoke;
+    padding: 15px 0;
+}
+
+.modalFormulario>div .formulario {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalFormulario>div .formulario div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.modalFormulario>div .formulario label {
+    display: block;
+}
+
+.modalFormulario>div .formulario input {
+    width: 75%;
+    text-align: center;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-top: 3px;
+}
+
+.formulario input.error {
+    border: 1px solid red !important;
+}
+
+.modalFormulario>div .formulario button {
+    width: 75%;
+    background-color: #29aae3;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* Para el tema del media*/
+
+.modalCarrito>div {
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalCarrito span {
+    margin-top: 10px;
+
+}
+
+.modalCarrito .informacion {
+    margin-left: 0;
+}
+
+#navCategorias ul {
+    overflow: hidden;
+    transition: height .6s ease;
+}
+
+#navCategorias ul.navcerrado {
+    height: 0 !important;
+}
+
+
+.modalPerfil {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+   
+}
+
+.modalPerfil ul li{
+    color: #333333;
+    line-height: 2;
+   
+}
+
+.modalPerfil h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212f49;
+    border-bottom: 3px solid #0071bd;
+    margin-bottom: 20px;
+}
+
+
+
+.modalPerfil img {
+    display: flex;
+    width: 200px;
+    border: 3px solid #0071bd;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.modalPerfil>div{
+   
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    padding-left: 10px;
+}
+
+.perfil >div >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalPerfil.cerrado {
+    display: none;
+}
+
+.alerta{
+    padding: 5px;
+    color: darkgreen;
+    background-color: #69ee62;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.alerta span{
+    
+    font-weight: bold;
+}
+

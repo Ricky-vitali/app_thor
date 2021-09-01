@@ -1,0 +1,6 @@
+Alumno: Ricardo Vitali
+Cuatrimestre: Segundo Cuatrimestre
+Comision: A
+Turno: Mañana
+Materia: Diseño y Desarrollo Web
+Profesor: Omar Toyos
